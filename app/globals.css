@@ -1,9 +1,41 @@
 @import "tailwindcss";
 
-.dropdown {
-  display: none;
-  position: absolute;
+/* Enables dropdown menus */
+.has-dropdown {
+  position: relative;
 }
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0;
+  transform: translateY(12px);
+  visibility: hidden;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
 .has-dropdown:hover .dropdown {
-  display: block;
+  opacity: 1;
+  transform: translateX(12px);
+  visibility: visible;
+}
+
+/* Hides the scrollbar */
+html {
+  overflow:   scroll;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; 
+}
+
+/* globals.css */
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+.blinking-cursor {
+  animation: blink 1s step-end infinite;
 }
