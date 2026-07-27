@@ -25,10 +25,10 @@ export default async function Research() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 px-4 sm:px-8 md:px-20 lg:px-40 xl:px-70 max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 px-4 md:px-8 max-w-4xl mx-auto">
         <ProjectCard project={projectOne} />
         <ProjectCard project={projectTwo} />
-      </div>
+    </div>
     </main>
   )
 }

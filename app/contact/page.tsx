@@ -11,8 +11,8 @@ const contacts = [
   },
   {
     label: 'LinkedIn',
-    value: 'linkedin.com/in/jrain-dev',
-    href: 'https://linkedin.com/in/jrain-dev',
+    value: 'linkedin.com/in/jdrainford',
+    href: 'https://linkedin.com/in/jdrainford',
     icon: 'linkedin',
   },
   {
